@@ -178,11 +178,11 @@ describe("Singly Linked List", function() {
 
       list.unshift(4);
       expect(list.head.val).to.equal(4);
-      expect(list.head.next).to.equal(2);
+      expect(list.head.next.val).to.equal(2);
 
       list.unshift(6);
       expect(list.head.val).to.equal(6);
-      expect(list.head.next).to.equal(4);
+      expect(list.head.next.val).to.equal(4);
     });
 
     it("Updates the tail on an empty list, but not otherwise", function() {
