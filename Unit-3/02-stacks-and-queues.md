@@ -53,7 +53,12 @@ Queue operations - (all [O(1) / Constant Time](https://en.wikipedia.org/wiki/Tim
 - isEmpty: check if empty
 - IsFull: if there is a limited size
 
-If you use __push__ as __enqueue__ then __dequeue__ must use __unshift__. If you use __shift__ as __enqueue__ then you must use __pop__ as __dequeue__. It doesn't matter which you choose, so long as __enqueue__ and __dequeue__ always operate on __opposite ends__ of the Linked List.
+If you use __push__ as __enqueue__ then __dequeue__ must use __shift__. If you use __unshift__ as __enqueue__ then you must use __pop__ as __dequeue__. It doesn't matter which you choose, so long as __enqueue__ and __dequeue__ always operate on __opposite ends__ of the Linked List.
+
+Enqueue To | Enqueue Method | Dequeue From | Dequeue Method
+------- | ---- | ---- | ----
+back | [`Array.push`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) | front | [`Array.shift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+front | [`Array.unshift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) | back | [`Array.pop`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
 ![http://goodmenproject.com/wp-content/uploads/2012/09/Screen-Shot-2012-09-15-at-9.16.04-AM.png](http://goodmenproject.com/wp-content/uploads/2012/09/Screen-Shot-2012-09-15-at-9.16.04-AM.png)
 
