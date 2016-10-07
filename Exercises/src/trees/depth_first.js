@@ -1,5 +1,5 @@
 /*
-  Given the following tree...
+  Given the root of the following tree...
 
        A
       /\
@@ -9,12 +9,12 @@
 
   Write a recursive algorithm that returns its values as an array, ordered using a depth first search, pre-order strategy.
 */
-module.exports.preOrder = function(node) {
+module.exports.preOrder = function(root) {
 
 };
 
 /*
-  Given the following tree...
+  Given the root of the following tree...
 
        A
       /\
@@ -24,12 +24,12 @@ module.exports.preOrder = function(node) {
 
   Write a recursive algorithm that returns its values as an array, ordered using a depth first search, in-order strategy.
 */
-module.exports.inOrder = function(node) {
+module.exports.inOrder = function(root) {
 
 };
 
 /*
-  Given the following tree...
+  Given the root of the following tree...
 
        A
       /\
@@ -39,6 +39,6 @@ module.exports.inOrder = function(node) {
 
   Write a recursive algorithm that returns its values as an array, ordered using a depth first search, post-order strategy.
 */
-module.exports.postOrder = function(node) {
+module.exports.postOrder = function(root) {
 
 };
