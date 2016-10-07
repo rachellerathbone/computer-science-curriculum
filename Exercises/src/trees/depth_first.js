@@ -1,7 +1,5 @@
 /*
-
-  A tree can be represented by a single root node that has child nodes,
-  which in turn have child nodes etc...
+  Given the following tree...
 
        A
       /\
@@ -9,19 +7,38 @@
    /\
   D E
 
-  You can write code that "visits" every node, and there are two strategies:
-
-    * depth first: A, then B, then D and E, then back to C
-    * breadth first: A, then B, then C, then D and E
-
-  Given a node, write a depthFirst function that will go through each node
-  and execute a callback on each node.
-
-  Imlement using recursion.
-
+  Write a recursive algorithm that returns its values as an array, ordered using a depth first search, pre-order strategy.
 */
+module.exports.preOrder = function(node) {
 
-var depthFirst = function(node, callback, level) {
 };
 
-module.exports = depthFirst;
+/*
+  Given the following tree...
+
+       A
+      /\
+    B   C
+   /\
+  D E
+
+  Write a recursive algorithm that returns its values as an array, ordered using a depth first search, in-order strategy.
+*/
+module.exports.inOrder = function(node) {
+
+};
+
+/*
+  Given the following tree...
+
+       A
+      /\
+    B   C
+   /\
+  D E
+
+  Write a recursive algorithm that returns its values as an array, ordered using a depth first search, post-order strategy.
+*/
+module.exports.postOrder = function(node) {
+
+};
