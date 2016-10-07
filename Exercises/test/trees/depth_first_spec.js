@@ -2,22 +2,16 @@
 
 const { expect } = require('chai');
 const depthFirst = require('../../src/trees/depth_first');
-const Node = require('../../src/trees/node');
+const Node = require('../../src/trees/helper_files/node');
 
 describe('depth first search', function() {
   describe('given a tree', function() {
     before(function() {
-      this.a = new Node('A');
-      const b = new Node('B');
-      const c = new Node('C');
       const d = new Node('D');
       const e = new Node('E');
-
-      b.addChild(d);
-      b.addChild(e);
-
-      this.a.addChild(b);
-      this.a.addChild(c);
+      const b = new Node('B', d, e);
+      const c = new Node('C');
+      this.a = new Node('A', b, c);
     })
 
     it('returns values ordered by depth first search, pre-order', function() {
