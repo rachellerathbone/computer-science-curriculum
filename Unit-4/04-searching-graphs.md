@@ -24,7 +24,7 @@ At it's heart, BFS is a simple process:
 1. Create an empty __queue__.
 2. __Enqueue__ the __source vertex__ into the queue.
 3. While the queue is __not empty__
-  1. __Dequeue__ the top vertex from the queue. We are call that vertex the __current vertex__.
+  1. __Dequeue__ the top vertex from the queue. Call that vertex the __current vertex__.
   2. Test the __current vertex__ to see if it's the __goal vertex__ (and return if it is).
   3. __Enqueue__ all of the neighboring vertices from __current vertex__.
 
@@ -59,7 +59,7 @@ Consider this updated process for BFS, the new steps 2 and 5 inside our while lo
 1. Create an empty __queue__.
 2. __Enqueue__ the __source vertex__ into the queue.
 3. While the queue is __not empty__
-  1. __Dequeue__ the top vertex from the queue. We are call that vertex the __current vertex__.
+  1. __Dequeue__ the top vertex from the queue. Call that vertex the __current vertex__.
   2. Test the __current vertex__ to see if it's already been __explored__, if it has `continue` without performing steps 3-5.
   3. Test the __current vertex__ to see if it's the __goal vertex__ (and return if it is).
   4. __Enqueue__ all of the neighboring vertices from __current vertex__.
@@ -148,7 +148,7 @@ So our process now looks like this:
 1. Create an empty __stack__.
 2. __Push__ the __source vertex__ into the stack.
 3. While the stack is __not empty__
-  1. __Pop__ the top vertex from the stack. We are call that vertex the __current vertex__.
+  1. __Pop__ the top vertex from the stack. Call that vertex the __current vertex__.
   2. Test the __current vertex__ to see if it's already been __explored__, if it has `continue` without performing steps 3-5.
   3. Test the __current vertex__ to see if it's the __goal vertex__ (and return if it is).
   4. __Push__ all of the neighboring vertices from __current vertex__.
