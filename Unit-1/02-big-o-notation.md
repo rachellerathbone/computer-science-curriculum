@@ -253,3 +253,4 @@ Factorials are a little more straightforward. The factorial of a positive intege
 
 - http://bigocheatsheet.com/
 - http://web.engr.illinois.edu/~jeffe/teaching/algorithms/
+- [Khan Academy's Asymptotic Notation unit](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation)
