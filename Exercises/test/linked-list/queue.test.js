@@ -1,19 +1,19 @@
 'use strict'
 
 const expect = require('chai').expect
-const makeQueue = require('../../src/linked-list/queue')
+let Queue = require('../../src/linked-list/queue')
 
 describe("queue", () => {
 
   it("starts off empty", () => {
-    const queue = makeQueue()
+    const queue = new Queue()
 
     expect(queue.size()).to.eq(0)
     expect(queue.dequeue()).to.be.undefined
   });
 
   it("can enqueue and dequeue a single item", () => {
-    const queue = makeQueue()
+    const queue = new Queue()
 
     queue.enqueue("Hello")
 
@@ -25,7 +25,7 @@ describe("queue", () => {
   });
 
   it("can enqueue and dequeue multiple items", () => {
-    const queue = makeQueue()
+    const queue = new Queue()
 
     queue.enqueue("Hello")
     queue.enqueue("and")
