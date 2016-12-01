@@ -269,19 +269,15 @@ describe("Singly Linked List", function() {
       expect(list.get(3)).to.equal(5);
       expect(list.get(4)).to.not.exist;
     });
-  });
 
-  // Bonus Tests -- write tests for these and remove the x to enable these tests
-  xdescribe("reverse", function(){
-    it("It should...", function(){
-
+    it("should reverse the list", function() {
+      list.push(1).push(2).push(3).push(4).push(5);
+      expect(list.head.val).to.equal(1);
+      list.reverse();
+      expect(list.head.val).to.equal(5);
     });
   });
 
+  // Bonus Tests -- reverse the list recursively
 
-  xdescribe("reverseRecursive", function(){
-    it("It should...", function(){
-
-    });
-  });
 });
