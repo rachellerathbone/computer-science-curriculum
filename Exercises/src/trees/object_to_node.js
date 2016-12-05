@@ -37,7 +37,7 @@
 
   Your job is to turn an object with the format above into a tree of nodes.
 
-  Imlement this depth-first, using recursion.
+  Implement this depth-first, using recursion.
 
 */
 
